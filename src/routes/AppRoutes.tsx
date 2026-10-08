@@ -1,15 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "@/components/pages/Home";
-import Compressor from "@/components/pages/compressor";
-import About from "@/components/pages/About"; // <-- ajout de la page À propos
+import { Routes } from "react-router-dom";
 
 export default function AppRoutes() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/compressor" element={<Compressor />} />
-      <Route path="/about" element={<About />} /> {/* nouvelle route */}
-    </Routes>
-  );
+  return <Routes></Routes>;
 }

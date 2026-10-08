@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "journey": "Parcours",
+    "activities": "Activités",
+    "vision": "Vision",
+    "contact": "Contact",
+    "contactButton": "Échanger"
+  },
+
+"hero": {
+  "scroll": "Défiler pour explorer",
+  "entrepreneur": "Entrepreneur",
+  "firstName": "SIMON",
+  "lastName": "DUPONG",
+  "sloganLine1": "Construire.",
+  "sloganLine2": "Entreprendre.",
+  "sloganLine3": "Transmettre.",
+  "description": "Une vision. Des projets. Un engagement.",
+  "cta": "Découvrir son parcours"
+}
+}

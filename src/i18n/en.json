@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "journey": "Journey",
+    "activities": "Activities",
+    "vision": "Vision",
+    "contact": "Contact",
+    "contactButton": "Let's talk"
+  },
+
+ "hero": {
+  "scroll": "Scroll to explore",
+  "entrepreneur": "Entrepreneur",
+  "firstName": "SIMON",
+  "lastName": "DUPONG",
+  "sloganLine1": "Build.",
+  "sloganLine2": "Lead.",
+  "sloganLine3": "Inspire.",
+  "description": "A vision. Projects. A commitment.",
+  "cta": "Discover his journey"
+}
+}

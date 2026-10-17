@@ -1,28 +1,15 @@
-import Navbar from "@/navbar/Navbar";
-import Hero from "@/Hero";
+import Home from "@/pages/Home";
 import WhatsAppButton from "./whatsapp/WhatsAppButton";
 import "./i18n";
+import ScrollIndicator from "./ScrollIndicator";
 
 function App() {
   return (
-    <main className="bg-[#030303] text-white">
-      <Navbar />
+    <>
+      <Home />
       <WhatsAppButton />
-
-      <section id="accueil">
-        <Hero />
-      </section>
-
-      <section id="apropos">{/* À développer */}</section>
-
-      <section id="parcours">{/* À développer */}</section>
-
-      <section id="activites">{/* À développer */}</section>
-
-      <section id="vision">{/* À développer */}</section>
-
-      <section id="contact">{/* À développer */}</section>
-    </main>
+      <ScrollIndicator />
+    </>
   );
 }
 

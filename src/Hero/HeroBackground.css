@@ -1,0 +1,175 @@
+.hero-background {
+  isolation: isolate;
+}
+
+/* =========================================================
+   HALO DORÉ PRINCIPAL
+   Lumière principale derrière Simon
+========================================================= */
+.hero-gold-halo {
+  position: absolute;
+
+  width: min(72vw, 880px);
+  aspect-ratio: 1;
+
+  top: 50%;
+  left: 73%;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(243, 240, 9, 0.42) 0%,
+    rgba(243, 240, 9, 0.30) 12%,
+    rgba(243, 240, 9, 0.20) 25%,
+    rgba(243, 240, 9, 0.11) 38%,
+    rgba(243, 240, 9, 0.05) 52%,
+    rgba(243, 240, 9, 0.018) 64%,
+    transparent 76%
+  );
+
+  filter: blur(30px);
+
+  animation: hero-gold-drift 18s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   LUMIÈRE SECONDAIRE
+   Donne plus de lumière autour de la tête / épaule
+========================================================= */
+.hero-gold-glow {
+  position: absolute;
+
+  width: min(42vw, 520px);
+  aspect-ratio: 1;
+
+  top: 32%;
+  left: 80%;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(243, 240, 9, 0.28) 0%,
+    rgba(243, 240, 9, 0.17) 25%,
+    rgba(243, 240, 9, 0.08) 45%,
+    rgba(243, 240, 9, 0.025) 60%,
+    transparent 74%
+  );
+
+  filter: blur(38px);
+
+  animation: hero-glow-drift 22s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   TRACÉS GÉOMÉTRIQUES
+========================================================= */
+.hero-geometric-lines {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: #f3f009;
+
+  opacity: 0.075;
+
+  animation: hero-lines-drift 30s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes hero-gold-drift {
+  from {
+    transform: translate(-54%, -48%) scale(0.94);
+  }
+
+  to {
+    transform: translate(-46%, -52%) scale(1.06);
+  }
+}
+
+@keyframes hero-glow-drift {
+  from {
+    transform: translate(-55%, -45%) scale(0.96);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: translate(-45%, -55%) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-lines-drift {
+  from {
+    transform: scale(1);
+    opacity: 0.045;
+  }
+
+  to {
+    transform: scale(1.035);
+    opacity: 0.09;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .hero-gold-halo {
+    width: 120vw;
+
+    top: 48%;
+    left: 70%;
+
+    filter: blur(25px);
+
+    background: radial-gradient(
+      circle,
+      rgba(243, 240, 9, 0.32) 0%,
+      rgba(243, 240, 9, 0.20) 20%,
+      rgba(243, 240, 9, 0.10) 38%,
+      rgba(243, 240, 9, 0.035) 55%,
+      transparent 73%
+    );
+  }
+
+  .hero-gold-glow {
+    width: 72vw;
+
+    top: 30%;
+    left: 78%;
+
+    filter: blur(28px);
+
+    background: radial-gradient(
+      circle,
+      rgba(243, 240, 9, 0.22) 0%,
+      rgba(243, 240, 9, 0.10) 38%,
+      transparent 70%
+    );
+  }
+
+  .hero-geometric-lines {
+    opacity: 0.045;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITÉ
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-gold-halo,
+  .hero-gold-glow,
+  .hero-geometric-lines {
+    animation: none;
+  }
+}

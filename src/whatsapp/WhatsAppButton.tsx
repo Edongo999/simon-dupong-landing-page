@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
       className="
         fixed
         bottom-6
-        right-6
+        left-6
         z-[100]
         flex
         h-14
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
         hover:scale-110
         hover:shadow-[#25D366]/30
         md:bottom-8
-        md:right-8
+        md:left-8
       "
     >
       <FaWhatsapp size={30} />

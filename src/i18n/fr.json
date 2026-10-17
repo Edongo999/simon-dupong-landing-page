@@ -1,23 +1,363 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos",
-    "journey": "Parcours",
-    "activities": "Activités",
-    "vision": "Vision",
+    "about": "Biographie",
+    "journey": "Parcours politique",
+    "activities": "Engagements",
+    "awards": "Distinctions",
     "contact": "Contact",
     "contactButton": "Échanger"
   },
 
 "hero": {
   "scroll": "Défiler pour explorer",
-  "entrepreneur": "Entrepreneur",
-  "firstName": "SIMON",
+  "professions": [
+    "Homme d’affaires",
+    "Homme politique"
+  ],
+  "firstName": "Simon",
   "lastName": "DUPONG",
-  "sloganLine1": "Construire.",
-  "sloganLine2": "Entreprendre.",
+  "sloganLine1": "Bâtir.",
+  "sloganLine2": "Fédérer.",
   "sloganLine3": "Transmettre.",
-  "description": "Une vision. Des projets. Un engagement.",
+  "description": "Un parcours au croisement de l’entrepreneuriat, de la culture, des médias et de l’engagement citoyen.",
+  "birthInfo": "Né le 12 février 1988 · Eséka, Cameroun",
   "cta": "Découvrir son parcours"
+},
+ "biography": {
+  "eyebrow": "Biographie",
+  "title": "Un parcours, plusieurs engagements.",
+  "description": "Découvrez l'homme derrière les projets, les responsabilités et les engagements.",
+
+  "portraitAlt": "Portrait de Simon Dupong",
+  "presentation": "Présentation",
+  "portraitRoles": "Entrepreneuriat · Politique · Culture",
+
+  "originLabel": "Origines",
+  "origin": "Eséka, Nyong-et-Kellé",
+  "country": "Cameroun",
+
+  "introEyebrow": "Au-delà des fonctions",
+  "headlineBefore": "Une trajectoire entre",
+  "headlineHighlight": "initiative, engagement et transmission.",
+
+  "birthDate": "12 février 1988",
+
+  "paragraph1": {
+    "beforeDate": "Né le",
+    "afterDate": "à Eséka, dans le département du Nyong-et-Kellé, Simon Dupong est un homme d’affaires et homme politique camerounais."
+  },
+
+  "paragraph2": "Son parcours s’est construit à la croisée de l’entrepreneuriat, de la vie associative, de la politique, des médias, de la culture et du sport, avec une implication progressive dans différents projets et responsabilités.",
+
+  "paragraph3": "De ses premières initiatives associatives à ses responsabilités entrepreneuriales et publiques, il développe une trajectoire marquée par la création de projets, l’accompagnement des talents et des initiatives en faveur des communautés.",
+
+  "highlights": {
+    "entrepreneurship": "Entrepreneuriat",
+    "politics": "Politique",
+    "civilSociety": "Société civile",
+    "media": "Médias",
+    "culture": "Culture",
+    "sport": "Sport"
+  },
+
+  "cta": "Découvrir ses engagements"
+},
+ "politicalJourney": {
+  "eyebrow": "Engagement politique",
+  "title": "Les étapes d'un parcours politique.",
+  "description": "De ses premiers engagements à la création du Parti Nationaliste Camerounais, découvrez les principales étapes de son parcours politique.",
+
+  "milestones": {
+    "2014": {
+      "title": "Entrée dans l’engagement politique",
+      "description": "En 2014, Simon Dupong fait ses premiers pas en politique au sein du CRAC — Croire au Cameroun — sous la direction de feu Bernard Tjonga. Il y exerce pendant quatre années la fonction de Conseiller national chargé de la jeunesse."
+    },
+
+    "2018": {
+      "title": "Mobilisation autour de Cabral Libii",
+      "description": "Lors de l’élection présidentielle de 2018, il apporte son soutien à Cabral Libii et crée la J.A.C. — Jeunesse Active pour Cabral — afin de mobiliser et d’impliquer davantage la jeunesse."
+    },
+
+    "after2018": {
+      "title": "Poursuite de l’engagement au PCRN",
+      "description": "Après l’élection présidentielle de 2018, il poursuit son engagement politique aux côtés de Cabral Libii et rejoint le PCRN, dans la continuité de la dynamique engagée autour de la jeunesse."
+    },
+
+    "sixYears": {
+      "title": "Six années au sein de l’UPC",
+      "description": "Il rejoint ensuite l’Union des Populations du Cameroun (UPC), où il exerce pendant six années les fonctions de porte-parole du Secrétaire général, Dr Pierre Baleguel Nkot."
+    },
+
+    "2026": {
+      "title": "Création du Parti Nationaliste Camerounais",
+      "description": "En 2026, après six années d’engagement au sein de l’UPC, Simon Dupong démissionne du parti et ouvre une nouvelle étape de son parcours politique avec la création du Parti Nationaliste Camerounais (PNC)."
+    }
+  }
+},
+"engagements": {
+  "eyebrow": "Au-delà des fonctions",
+  "title": "Un parcours. Plusieurs terrains d’action.",
+  "description": "Entreprendre, rassembler, créer et transmettre : les différents domaines qui composent le parcours de Simon Dupong.",
+  "introduction": "De l’entrepreneuriat à la culture, des médias au sport, de la société civile au rayonnement international et aux traditions, chaque domaine révèle une autre facette de son parcours.",
+  "domainsCount": "07 domaines présentés",
+
+  "items": {
+    "entrepreneurship": {
+      "category": "ENTREPRENEURIAT",
+      "title": "Entreprendre. Construire. Développer.",
+      "description": "De DUPONG Media, créé en 2015, au Groupe DUPONG Company et à la Société Nouvelle Afrique, Simon Dupong présente un parcours entrepreneurial dans la communication, le transport, l’événementiel, l’immobilier et d’autres secteurs.",
+      "detail": "Entreprises & initiatives"
+    },
+
+    "civilSociety": {
+      "category": "SOCIÉTÉ CIVILE",
+      "title": "Créer des liens, fédérer les énergies.",
+      "description": "AMAC, ACPAN, ACOCAM, Enfants d’Eseka, Enfants de la Grotte et RECJHASCE : plusieurs associations fondées autour de la culture, des médias, de la protection animale et de l’engagement citoyen.",
+      "detail": "6 associations mentionnées"
+    },
+
+    "culture": {
+      "category": "CULTURE",
+      "title": "Faire grandir les talents.",
+      "description": "Après ses débuts dans la musique, il s’oriente vers l’accompagnement artistique et la promotion culturelle. Son parcours mentionne la production de plus de 18 artistes et l’organisation de plusieurs événements culturels au Cameroun et à l’international.",
+      "detail": "Artistes · Festivals · Culture"
+    },
+
+    "media": {
+      "category": "MÉDIAS & COMMUNICATION",
+      "title": "Informer, raconter, transmettre.",
+      "description": "De la télévision à la presse écrite, son parcours comprend des activités de journaliste, de correspondant, de reporter et de directeur de publication. Parmi les médias cités figurent La Voix des Religions, L’Arène Hebdo et Le Grand Bassa.",
+      "detail": "Presse · Audiovisuel · Édition"
+    },
+
+    "sport": {
+      "category": "SPORT",
+      "title": "Du terrain aux responsabilités.",
+      "description": "Son engagement sportif débute dans le rugby, où il exerce des responsabilités en communication et en promotion du rugby jeune. Il s’investit ensuite dans le football avec Renaissance Football Club du NK et la ligue départementale du Nyong-et-Kellé.",
+      "detail": "Rugby · Football · Management"
+    },
+
+    "international": {
+      "category": "RAYONNEMENT INTERNATIONAL",
+      "title": "Porter son engagement au-delà des frontières.",
+      "description": "Son parcours comprend des responsabilités liées à la promotion de la langue russe, des activités de reportage international et des missions dans plusieurs pays. Il indique avoir visité les 10 régions du Cameroun et 32 pays à travers le monde.",
+      "detail": "Russophonie · Reportage · International"
+    },
+
+    "tradition": {
+      "category": "TRADITION & CHEFFERIES",
+      "title": "Entre héritage, reconnaissance et transmission.",
+      "description": "Son parcours mentionne plusieurs distinctions traditionnelles, dont le titre honorifique de Mbombock en pays Bassa, celui de Zomloa des Zomloa chez les Ekang et le titre de Wola attribué par plusieurs rois de l’Ouest Cameroun.",
+      "detail": "Tradition · Chefferies · Héritage"
+    }
+  },
+   "authorFirst": "Simon",
+  "authorLast": "DUPONG",
+  "footerLabel": "Parcours & engagements",
+  "number": "07",
+  "domainsCount": "domaines présentés",
+ "signatures": {
+  "0": {
+    "text": "Un parcours riche, engagé et tourné vers l’avenir.",
+    "slogan": "Parcours · Engagement · Transmission"
+  },
+  "1": {
+    "text": "Des convictions fortes, au service de l’action et de la société.",
+    "slogan": "Conviction · Action · Impact"
+  },
+  "2": {
+    "text": "Entre héritage, responsabilité et vision d’avenir.",
+    "slogan": "Héritage · Responsabilité · Vision"
+  }
+},
+  "slogan": "Parcours · Engagement · Transmission",
+  "conclusion": "Ces domaines constituent un aperçu de son parcours. Les responsabilités, les réalisations et les dates sont à découvrir dans les rubriques détaillées du site."
+  
+
+},
+ "awards": {
+  "eyebrow": "Distinctions & publications",
+  "title": "Des reconnaissances et des ouvrages.",
+  "description": "Distinctions officielles, reconnaissances professionnelles et publications : quelques repères parmi les réalisations et récompenses mentionnées dans son parcours.",
+
+  "distinctionsTitle": "Distinctions & reconnaissances",
+
+  "distinctions": {
+    "russianLanguage": {
+      "date": "13 juillet 2024",
+      "title": "Prix du meilleur promoteur de la langue russe en Afrique",
+      "detail": "Simon Dupong reçoit le premier prix du meilleur promoteur de la langue russe en Afrique, en sa qualité d’Administrateur Directeur Général du Centre Linguistique Russe du Cameroun."
+    },
+
+    "workMedals": {
+      "date": "20 mai 2025",
+      "title": "Médailles d’honneur du travail",
+      "detail": "Il reçoit des médailles d’honneur du travail en argent et en vermeil à l’occasion des distinctions décernées le 20 mai 2025."
+    },
+
+    "cameroonianMerit": {
+      "date": "20 mai 2026",
+      "title": "Chevalier de l’Ordre du Mérite camerounais",
+      "detail": "Simon Dupong est élevé au grade de Chevalier de l’Ordre du Mérite camerounais."
+    }
+  },
+
+  "publicationsTitle": "Ouvrages publiés",
+
+  "books": {
+    "pereNonDeclare": {
+      "year": "2020",
+      "title": "Père non déclaré",
+      "detail": "Un ouvrage consacré à la paternité, aux responsabilités familiales et aux réalités sociales qui entourent la question du père."
+    },
+
+    "puberteFinanciere": {
+      "year": "—",
+      "title": "La Puberté Financière",
+      "detail": "Un ouvrage consacré à la gestion des ressources, des actifs et des entreprises, avec une réflexion autour de la construction financière."
+    },
+
+    "virusAccueil": {
+      "year": "—",
+      "title": "Le virus de l’accueil des usagers au Cameroun",
+      "detail": "Un ouvrage consacré à l’accueil des usagers et aux enjeux de professionnalisme dans les services publics et privés au Cameroun."
+    }
+  },
+
+  "editorialNote": "Ces distinctions et publications constituent quelques repères d’un parcours marqué par l’engagement, la transmission et la reconnaissance dans différents domaines.",
+
+  "lightboxAlt": "Photographie d’une distinction"
+},
+ "gallery": {
+  "eyebrow": "Galerie",
+  "title": "Quelques instants du parcours.",
+  "description": "Une sélection de photographies et de contenus audiovisuels illustrant les différentes facettes du parcours de Simon Dupong.",
+
+  "photos": {
+    "portrait": {
+      "alt": "Portrait de Simon Dupong",
+      "label": "Portrait"
+    },
+    "events": {
+      "alt": "Simon Dupong lors d'un événement",
+      "label": "Événements"
+    },
+    "engagements": {
+      "alt": "Simon Dupong lors d'une activité publique",
+      "label": "Engagements"
+    },
+    "meetings": {
+      "alt": "Simon Dupong lors d'une rencontre ou d'une activité professionnelle",
+      "label": "Rencontres"
+    },
+    "travel": {
+      "alt": "Simon Dupong lors d'un déplacement",
+      "label": "Voyages"
+    },
+    "trips": {
+      "alt": "Simon Dupong lors d'une visite",
+      "label": "Déplacements"
+    }
+  },
+
+  "videoEyebrow": "En images",
+  "videoTitle": "Un parcours à découvrir autrement.",
+  "videoLabel": "Document audiovisuel"
+},
+
+"impact": {
+  "eyebrow": "Actions & impact",
+  "title": "Des engagements traduits en actions.",
+  "description": "Actions sociales, partenariats institutionnels et projets structurants : un aperçu des initiatives présentées dans le parcours de Simon Dupong.",
+
+  "social": {
+    "eyebrow": "01 — Actions sociales",
+    "title": "Agir au plus près des communautés.",
+    "description": "Son parcours fait état de plusieurs initiatives dans les domaines de la santé, de l’éducation, de l’accès à l’eau, de l’éclairage public, de l’agriculture et de l’accompagnement des jeunes."
+  },
+
+  "stats": {
+    "pregnantWomen": "Femmes enceintes accompagnées à travers des aides à la layette et à l’accouchement.",
+    "children": "Enfants accompagnés dans leur scolarisation.",
+    "lighting": "Lampadaires installés dans le cadre d’actions d’éclairage public.",
+    "masks": "Masques distribués pendant la période de la Covid-19."
+  },
+
+  "institutional": {
+    "eyebrow": "02 — Partenariats institutionnels",
+    "title": "Former et accompagner les institutions.",
+    "description": "Le parcours présenté mentionne plusieurs accords de formation conclus avec des administrations camerounaises.",
+
+    "items": {
+      "customs": {
+        "title": "204 agents des douanes formés",
+        "description": "Une formation réalisée dans le cadre d’un accord mentionné avec le ministre des Finances, Louis Paul Motaze."
+      },
+
+      "forests": {
+        "title": "47 agents des eaux et forêts formés",
+        "description": "Un programme réalisé avec l’accord du ministre Jules Forest Ndongo."
+      },
+
+      "police": {
+        "title": "Plus de 650 policiers formés",
+        "description": "Des formations destinées à des policiers de différents grades, selon les informations communiquées."
+      }
+    }
+  },
+
+  "project": {
+    "eyebrow": "03 — Projet structurant",
+    "title": "Un centre de formation professionnelle à grande échelle.",
+    "description": "Parmi les projets présentés figure la création d’un centre professionnel de formation destiné à accueillir plus de 3 000 apprenants dans plus de 100 filières techniques. L’investissement estimé dépasse 3 milliards de FCFA, avec l’ambition de contribuer à l’emploi et à l’insertion professionnelle des jeunes.",
+    "capacity": "apprenants visés",
+    "programs": "filières techniques prévues"
+  }
+},
+"contact": {
+  "eyebrow": "Prendre contact",
+  "title": "Un projet, une idée, une ambition ?",
+  "description": "Pour une demande professionnelle, une collaboration ou une prise de contact, retrouvez les coordonnées officielles.",
+  "statementEyebrow": "Ouvrir le dialogue",
+  "headline": "Construire des relations durables commence par un échange.",
+  "statement": "Entrepreneuriat, engagement public, culture, formation ou initiatives sociales : les projets prennent forme lorsque les idées rencontrent les bonnes personnes.",
+  "contactEyebrow": "Contact officiel",
+  "contactTitle": "Échanger avec son équipe.",
+  "emailLabel": "Adresse e-mail",
+  "availability": "Disponible pour les prises de contact",
+  "number": "07",
+  "phonePrimary": "+237 697 47 55 73",
+  "phoneSecondary": "+237 654 87 25 85",
+  "email": "contact@exemple.cm",
+  "facebookLabel": "Facebook",
+  "linkedinLabel": "LinkedIn"
+},
+"footer": {
+  "name": "Simon DUPONG",
+  "identity": "Engagement · Vision · Transmission",
+  "statement": "Un parcours guidé par l’engagement, la responsabilité et la volonté de bâtir.",
+  "navigationTitle": "Navigation",
+  "navigationAriaLabel": "Navigation du pied de page",
+
+  "navigation": {
+    "home": "Accueil",
+    "biography": "Biographie",
+    "journey": "Parcours",
+    "engagements": "Engagements",
+    "impact": "Impact",
+    "awards": "Distinctions",
+    "gallery": "Galerie"
+  },
+
+  "follow": "Suivre",
+  "facebookLabel": "Facebook",
+  "linkedinLabel": "LinkedIn",
+
+  "backToTop": "Retour en haut",
+  "backToTopAriaLabel": "Retourner en haut de la page",
+
+  "copyright": "© 2026 Simon Dupong. Tous droits réservés.",
+  "signature": "Site officiel"
 }
 }

@@ -5,10 +5,10 @@ import LanguageSelector from "./LanguageSelector";
 
 const menuItems = [
   { key: "home", href: "#accueil" },
-  { key: "about", href: "#apropos" },
-  { key: "journey", href: "#parcours" },
-  { key: "activities", href: "#activites" },
-  { key: "vision", href: "#vision" },
+  { key: "about", href: "#biographie" },
+  { key: "journey", href: "#parcours-politique" },
+  { key: "activities", href: "#engagements" },
+  { key: "awards", href: "#awards" },
   { key: "contact", href: "#contact" },
 ];
 
@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-[100] w-full">
+    <header className="fixed left-0 top-0 z-[100] w-full border-b border-white/10 bg-[#030303]/90 shadow-lg shadow-black/20 backdrop-blur-xl">
       <nav className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 md:px-10 lg:px-16">
         {/* LOGO */}
         <motion.a
@@ -169,7 +169,7 @@ export default function Navbar() {
           top-20
           w-full
           border-y border-white/10
-          bg-[#030303]/95
+          bg-[#030303]/98
           backdrop-blur-xl
           transition-all duration-500
           md:hidden

@@ -9,15 +9,256 @@
     "contactButton": "Let's talk"
   },
 
- "hero": {
-  "scroll": "Scroll to explore",
-  "entrepreneur": "Entrepreneur",
-  "firstName": "SIMON",
-  "lastName": "DUPONG",
-  "sloganLine1": "Build.",
-  "sloganLine2": "Lead.",
-  "sloganLine3": "Inspire.",
-  "description": "A vision. Projects. A commitment.",
-  "cta": "Discover his journey"
+"hero": {
+"scroll": "Scroll to explore",
+"profession": "Businessman",
+"firstName": "Simon",
+"lastName": "DUPONG",
+"sloganLine1": "Build.",
+"sloganLine2": "Unite.",
+"sloganLine3": "Inspire.",
+"description": "A journey at the intersection of entrepreneurship, culture, media and civic engagement.",
+"birthInfo": "Born February 12, 1988 · Eséka, Cameroon",
+"cta": "Discover his journey"
+},
+ 
+  "biography": {
+    "eyebrow": "Biography",
+    "title": "One journey, multiple commitments.",
+    "description": "Discover the man behind the projects, responsibilities and commitments.",
+
+    "portraitAlt": "Portrait of Simon Dupong",
+    "presentation": "Presentation",
+    "portraitRoles": "Entrepreneurship · Politics · Culture",
+
+    "originLabel": "Origins",
+    "origin": "Eséka, Nyong-et-Kellé",
+    "country": "Cameroon",
+
+    "introEyebrow": "Beyond the roles",
+    "headlineBefore": "A journey shaped by",
+    "headlineHighlight": "initiative, commitment and transmission.",
+
+    "birthDate": "February 12, 1988",
+
+    "paragraph1": {
+      "beforeDate": "Born on",
+      "afterDate": "in Eséka, in the Nyong-et-Kellé department, Simon Dupong is a Cameroonian businessman and politician."
+    },
+
+    "paragraph2": "His journey has gradually developed at the crossroads of entrepreneurship, community involvement, politics, media, culture and sports.",
+
+    "paragraph3": "From his early community initiatives to his entrepreneurial and public responsibilities, he has built a path driven by commitment, project development and support for various initiatives.",
+
+    "highlights": {
+      "entrepreneurship": "Entrepreneurship",
+      "politics": "Politics",
+      "civilSociety": "Civil Society",
+      "media": "Media",
+      "culture": "Culture",
+      "sport": "Sports"
+    },
+
+    "cta": "Discover his commitments"
+  },
+
+  "politicalJourney": {
+    "eyebrow": "Political Engagement",
+    "title": "The key stages of a political journey.",
+    "description": "A timeline of his political commitments and the evolution of his journey.",
+
+    "milestones": {
+      "2014": {
+        "date": "2014",
+        "title": "Entering political engagement",
+        "description": "Simon Dupong began his political journey within the CRAC, under the leadership of the late Bernard Tjonga. He served for four years as National Youth Affairs Adviser."
+      },
+
+      "2018": {
+        "date": "2018",
+        "title": "Mobilization around Cabral Libii",
+        "description": "During the 2018 presidential election, he supported Cabral Libii and established J.A.C — Jeunesse Active pour Cabral — an initiative dedicated to mobilizing young people."
+      },
+
+      "after2018": {
+        "date": "After 2018",
+        "title": "Joining the PCRN",
+        "description": "Following this political momentum, he continued his commitment within the PCRN, building on the mobilization initiated around Cabral Libii."
+      },
+
+      "sixYears": {
+        "date": "6 years",
+        "title": "Commitment within the UPC",
+        "description": "He subsequently joined the Union des Populations du Cameroun (UPC), where he served for six years as spokesperson for the Secretary General, Dr. Pierre Baleguel Nkot."
+      },
+
+      "2026": {
+        "date": "2026",
+        "title": "A new political direction",
+        "description": "After resigning from the UPC, Simon Dupong began a new chapter in his political journey with the creation of the Parti Nationaliste Camerounais (PNC)."
+      }
+    }
+  },
+  
+  "awards": {
+    "eyebrow": "Awards and Publications",
+    "title": "Recognition and ideas to share.",
+    "description": "Awards, distinctions and publications that have marked his journey.",
+
+    "distinctionsTitle": "Awards",
+
+    "distinctions": {
+      "russianLanguage": {
+        "date": "July 13, 2024",
+        "title": "First Prize for Best Promoter of the Russian Language in Africa",
+        "detail": "Award presented by the Russian Federation in recognition of his commitment to promoting the Russian language in Africa, while serving as Managing Director of the Russian Language Centre of Cameroon."
+      },
+
+      "workMedals": {
+        "date": "May 20, 2025",
+        "title": "Silver and Vermeil Medal of Honour for Labour",
+        "detail": "Award received on behalf of the President of the Republic of Cameroon, recognizing his professional career and commitment."
+      },
+
+      "cameroonianMerit": {
+        "date": "May 20, 2026",
+        "title": "Knight of Cameroonian Merit",
+        "detail": "Distinction received on behalf of the President of the Republic of Cameroon at the rank of Knight of Cameroonian Merit."
+      }
+    },
+
+    "publicationsTitle": "Publications",
+
+    "books": {
+      "pereNonDeclare": {
+        "year": "2020",
+        "title": "Undeclared Father",
+        "detail": "A collection of testimonies focusing on people who have experienced the situation of being an undeclared father. Presented as his best-selling book."
+      },
+
+      "puberteFinanciere": {
+        "year": "To be confirmed",
+        "title": "Financial Puberty",
+        "detail": "A training book focusing on asset management and management-related issues for business leaders and company executives."
+      },
+
+      "virusAccueil": {
+        "year": "To be confirmed",
+        "title": "The Ushering Virus in Cameroon",
+        "detail": "A book addressing the lack of professionalism in welcoming and serving users in public and private services in Cameroon."
+      }
+    }
+  },
+  "gallery": {
+  "eyebrow": "In pictures",
+  "title": "Moments that tell the story.",
+  "description": "A selection of portraits, events, encounters and journeys.",
+  "videoEyebrow": "In motion",
+  "videoTitle": "Beyond the images.",
+  "videoLabel": "Video"
+},
+"engagements": {
+  "eyebrow": "Beyond official roles",
+  "title": "One journey. Multiple fields of action.",
+  "description": "Entrepreneurship, community building, creativity and knowledge sharing: the different fields that make up Simon Dupong’s journey.",
+  "introduction": "From entrepreneurial initiatives to community involvement, each field reveals another dimension of his journey.",
+  "domainsCount": "06 areas presented",
+
+  "items": {
+    "entrepreneurship": {
+      "category": "ENTREPRENEURSHIP",
+      "title": "Entrepreneurship. Building. Developing.",
+      "description": "From DUPONG Media, founded in 2015, to Groupe DUPONG Company and Nouvelle Afrique, Simon Dupong’s entrepreneurial journey spans communication, transportation, events, real estate and other sectors.",
+      "detail": "Businesses & initiatives"
+    },
+
+    "civilSociety": {
+      "category": "CIVIL SOCIETY",
+      "title": "Building connections, bringing people together.",
+      "description": "AMAC, ACPAN, ACOCAM, Enfants d’Eseka, Enfants de la Grotte and RECJHASCE: several associations founded around culture, media, animal protection and civic engagement.",
+      "detail": "6 associations mentioned"
+    },
+
+    "culture": {
+      "category": "CULTURE",
+      "title": "Helping talent grow.",
+      "description": "After beginning his journey in music, he turned to supporting artists and promoting culture. His career includes the production of more than 18 artists and the organization of several events.",
+      "detail": "Artists · Festivals · Culture"
+    },
+
+    "media": {
+      "category": "MEDIA & COMMUNICATION",
+      "title": "Informing, telling stories, sharing.",
+      "description": "From television to print media, his career includes work as a journalist, correspondent and publisher. Publications mentioned include La Voix des Religions, L’Arène Hebdo and Le Grand Bassa.",
+      "detail": "Press · Broadcasting · Publishing"
+    },
+
+    "sport": {
+      "category": "SPORT",
+      "title": "From the field to leadership.",
+      "description": "His involvement in sport began with rugby, where he held responsibilities in communication and the promotion of youth rugby. He later became involved in football with Renaissance Football Club du NK and the Nyong-et-Kellé departmental football league.",
+      "detail": "Rugby · Football · Management"
+    },
+
+    "international": {
+      "category": "BOOKS & INTERNATIONAL OUTREACH",
+      "title": "Sharing ideas beyond borders.",
+      "description": "Author of three announced books, he has also held responsibilities related to the promotion of the Russian language. His journey includes international activities, reporting assignments and travel to 32 countries.",
+      "detail": "Writing · Russophonie · Travel"
+    }
+  },
+
+  "conclusion": "These areas provide an overview of his journey. His responsibilities, achievements and key dates can be explored throughout the detailed sections of the website.",
+  "footerLabel": "Journey & commitments"
+},
+"impact": {
+  "eyebrow": "Actions & impact",
+  "title": "Turning commitments into action.",
+  "description": "Social initiatives, institutional partnerships and structural projects: an overview of the initiatives presented throughout Simon Dupong’s journey.",
+
+  "social": {
+    "eyebrow": "01 — Social initiatives",
+    "title": "Taking action close to communities.",
+    "description": "His journey includes several initiatives in health, education, access to water, public lighting, agriculture and support for young people."
+  },
+
+  "stats": {
+    "health": "Support reported for pregnant women and hernia operations.",
+    "education": "Children supported throughout their education, from primary school to university.",
+    "lighting": "Public streetlights installed as part of the initiatives presented.",
+    "masks": "Masks distributed during the Covid-19 period."
+  },
+
+  "institutional": {
+    "eyebrow": "02 — Institutional partnerships",
+    "title": "Training and supporting institutions.",
+    "description": "The presented journey includes several training agreements with Cameroonian public administrations.",
+
+    "items": {
+      "customs": {
+        "title": "Ministry of Finance",
+        "description": "Training of 204 customs officers under an agreement mentioned with the ministry."
+      },
+
+      "forests": {
+        "title": "Ministry of Forestry and Wildlife",
+        "description": "Training of 47 water and forestry officers as part of an institutional agreement."
+      },
+
+      "police": {
+        "title": "General Delegation for National Security",
+        "description": "More than 650 police officers of different ranks trained according to the information provided."
+      }
+    }
+  },
+
+  "project": {
+    "eyebrow": "03 — Structural project",
+    "title": "A large-scale vocational training centre.",
+    "description": "Among the projects presented is the construction of a major vocational training centre designed to accommodate more than 3,000 learners and offer more than 100 technical training programmes.",
+    "capacity": "target learners",
+    "programs": "planned technical programmes"
+  }
 }
+
 }

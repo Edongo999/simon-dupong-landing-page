@@ -1,5 +1,4 @@
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
 import PortraitReveal from "./PortraitReveal";
 import * as THREE from "three";
 
@@ -10,7 +9,6 @@ interface HeroSceneProps {
 function Particles({ progress }: { progress: number }) {
   const particles = Array.from({ length: 65 }, (_, index) => {
     const angle = (index / 65) * Math.PI * 2;
-
     const radius = 3.2 + (index % 5) * 0.35;
 
     return {
@@ -30,7 +28,12 @@ function Particles({ progress }: { progress: number }) {
         >
           <sphereGeometry args={[1, 6, 6]} />
 
-          <meshBasicMaterial color="#ffffff" transparent opacity={0.07} />
+          <meshBasicMaterial
+            color="#ffffff"
+            transparent
+            opacity={0.07}
+            toneMapped={false}
+          />
         </mesh>
       ))}
     </group>
@@ -40,17 +43,11 @@ function Particles({ progress }: { progress: number }) {
 function Scene({ progress }: HeroSceneProps) {
   return (
     <>
-      <ambientLight intensity={0.45} />
-
-      <directionalLight position={[4, 5, 6]} intensity={2.2} />
-
-      <directionalLight position={[-3, 2, 3]} intensity={0.8} color="#f3f009" />
-
+      {/* PORTRAIT */}
       <PortraitReveal progress={progress} />
 
+      {/* PARTICULES */}
       <Particles progress={progress} />
-
-      <Environment preset="city" />
     </>
   );
 }
@@ -67,8 +64,9 @@ export default function HeroScene({ progress }: HeroSceneProps) {
           antialias: true,
           alpha: true,
           toneMapping: THREE.ACESFilmicToneMapping,
+          powerPreference: "high-performance",
         }}
-        dpr={[1, 2]}
+        dpr={[1, 1.5]}
       >
         <Scene progress={progress} />
       </Canvas>

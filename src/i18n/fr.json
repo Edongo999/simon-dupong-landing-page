@@ -6,6 +6,7 @@
     "activities": "Engagements",
     "awards": "Distinctions",
     "contact": "Contact",
+     "gallery": "Galerie",
     "contactButton": "Échanger"
   },
 
@@ -101,6 +102,15 @@
   "description": "Entreprendre, rassembler, créer et transmettre : les différents domaines qui composent le parcours de Simon Dupong.",
   "introduction": "De l’entrepreneuriat à la culture, des médias au sport, de la société civile au rayonnement international et aux traditions, chaque domaine révèle une autre facette de son parcours.",
   "domainsCount": "07 domaines présentés",
+    "societeAfrica": {
+    "eyebrow": "Entrepreneuriat · Société Nouvelle Afrique",
+    "title": "Des activités au service du développement.",
+    "description": "Présidée par Simon Dupong, la Société Nouvelle Afrique est une entreprise au capital de 100 000 000 FCFA qui intervient dans plusieurs secteurs, notamment le BTP et les marchés publics, la microfinance, l’automobile, l’agropastorale, l’immobilier, l’import-export, l’hébergement, le tourisme et voyage, ainsi que le transport.",
+    "previous": "Affiche précédente",
+    "next": "Affiche suivante",
+    "goTo": "Voir l’affiche"
+  },
+
 
   "items": {
     "entrepreneurship": {
@@ -228,8 +238,9 @@
   "editorialNote": "Ces distinctions et publications constituent quelques repères d’un parcours marqué par l’engagement, la transmission et la reconnaissance dans différents domaines.",
 
   "lightboxAlt": "Photographie d’une distinction"
+  
 },
- "gallery": {
+  "gallery": {
   "eyebrow": "Galerie",
   "title": "Quelques instants du parcours.",
   "description": "Une sélection de photographies et de contenus audiovisuels illustrant les différentes facettes du parcours de Simon Dupong.",
@@ -251,15 +262,127 @@
       "alt": "Simon Dupong lors d'une rencontre ou d'une activité professionnelle",
       "label": "Rencontres"
     },
-    "travel": {
-      "alt": "Simon Dupong lors d'un déplacement",
+   "travel": {
+      "alt": "Simon Dupong lors d'un voyage",
       "label": "Voyages"
     },
-    "trips": {
+    "visits": {
       "alt": "Simon Dupong lors d'une visite",
-      "label": "Déplacements"
-    }
+      "label": "Visites"
+    },
+    "conference": {
+      "alt": "Simon Dupong en conférence",
+      "label": "Conférence"
+    },
+    "innovation": {
+      "alt": "Simon Dupong présentant une innovation",
+      "label": "Innovation"
+    },
+    "teamwork": {
+      "alt": "Simon Dupong en travail d'équipe",
+      "label": "Équipe"
+    },
+    "leadership": {
+      "alt": "Simon Dupong en rôle de leader",
+      "label": "Leadership"
+    },
+    "vision": {
+      "alt": "Simon Dupong exposant sa vision",
+      "label": "Vision"
+    },
+    "strategy": {
+      "alt": "Simon Dupong en stratégie",
+      "label": "Stratégie"
+    },
+    "growth": {
+      "alt": "Simon Dupong illustrant la croissance",
+      "label": "Découverte"
+    },
+    "impact": {
+      "alt": "Simon Dupong et son impact",
+      "label": "Impact"
+    },
+    "future": {
+      "alt": "Simon Dupong évoquant l'avenir",
+      "label": "Futur"
+    },
+    "awards": {
+      "alt": "Simon Dupong recevant une distinction",
+      "label": "Famille"
+    },
+    "network": {
+      "alt": "Simon Dupong avec son réseau",
+      "label": "Réseau"
+    },
+    "projects": {
+      "alt": "Simon Dupong présentant ses projets",
+      "label": "Projets"
+    },
+    "success": {
+      "alt": "Simon Dupong célébrant un succès",
+      "label": "Succès"
+    },
+    "culture": {
+      "alt": "Simon Dupong dans un cadre culturel",
+      "label": "Culture"
+    },
+    "heritage": {
+      "alt": "Simon Dupong valorisant le patrimoine",
+      "label": "Patrimoine"
+    },
+    "community": {
+      "alt": "Simon Dupong avec la communauté",
+      "label": "Communauté"
+    },
+    "education": {
+      "alt": "Simon Dupong dans un cadre éducatif",
+      "label": "Éducation"
+    },
+    "Amitié": {
+      "alt": "Simon Dupong lors d'une activité sportive",
+      "label": "Amitié"
+    },
+  "presence": {
+  "alt": "Simon Dupong debout avec une personne dans une pièce",
+  "label": "Présence"
   },
+    "nature": {
+      "alt": "Simon Dupong en pleine Diplomatie",
+      "label": "Diplomatie"
+    },
+    "art": {
+      "alt": "Simon Dupong dans un cadre artistique",
+      "label": "Art"
+    },
+    "festival": {
+      "alt": "Simon Dupong lors d'un festival",
+      "label": "Festival"
+    },
+    "celebration": {
+      "alt": "Simon Dupong lors d'une célébration",
+      "label": "Célébration"
+    },
+    "journey": {
+      "alt": "Simon Dupong en voyage",
+      "label": "Médias"
+    },
+    "memories": {
+      "alt": "Souvenirs du parcours de Simon Dupong",
+      "label": "Souvenirs"
+    },
+    "russia": {
+      "alt": "Simon Dupong devant une grande zone en Russie",
+      "label": "Russie"
+    },
+
+    "speech": {
+      "alt": "Dernière image de clôture (large)",
+      "label": "Discours"
+    }
+      
+    
+},
+
 
   "videoEyebrow": "En images",
   "videoTitle": "Un parcours à découvrir autrement.",
@@ -354,8 +477,8 @@
   "facebookLabel": "Facebook",
   "linkedinLabel": "LinkedIn",
 
-  "backToTop": "Retour en haut",
-  "backToTopAriaLabel": "Retourner en haut de la page",
+  
+  
 
   "copyright": "© 2026 Simon Dupong. Tous droits réservés.",
   "signature": "Site officiel"

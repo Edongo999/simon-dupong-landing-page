@@ -83,7 +83,9 @@ export default function Hero() {
     <section
       ref={heroRef}
       id="accueil"
-      className="relative h-[200vh] bg-[#030303]"
+      className="relative h-[86vh]   /* hauteur réduite par défaut (mobile) */
+    sm:h-[180vh] /* un peu plus sur petits écrans */
+    md:h-[200vh] /* hauteur normale sur desktop */ bg-[#030303]"
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         <HeroBackground />

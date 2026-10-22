@@ -218,7 +218,7 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
         }}
       >
         <a
-          href="#apropos"
+          href="#biographie"
           className="group inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.16em] text-white/80 md:gap-4 md:text-xs md:tracking-[0.2em]"
         >
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#f3f009] bg-[#f3f009] text-black transition-all duration-300 group-hover:bg-transparent group-hover:text-[#f3f009] md:h-11 md:w-11">

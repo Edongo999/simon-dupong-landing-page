@@ -62,7 +62,7 @@ const GalleryMediaSymbol = () => {
         sm:w-44
 
         lg:right-[-80px]
-        lg:top-[-70px]
+        lg:top-[-110px]
         lg:h-[400px]
         lg:w-[400px]
       "

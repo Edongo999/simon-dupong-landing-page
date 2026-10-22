@@ -21,7 +21,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#0d0d0a] px-6 py-16 sm:px-10 lg:px-20 lg:py-12"
+      className="relative overflow-hidden bg-[#0d0d0a] px-6 py-9 sm:px-10 lg:px-20 lg:py-9"
     >
       {/* Lumières d'ambiance */}
       <div
@@ -275,32 +275,47 @@ export default function ContactSection() {
                     duration={1.05}
                     amount={0.08}
                   >
-                    <div>
-                      <span className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.2em] text-black/45">
-                        {t("contact.socialLabel")}
-                      </span>
+                    {/* Réseaux sociaux */}
+                    <div className="flex flex-wrap gap-3">
+                      {/* Facebook */}
+                      <a
+                        href="https://www.facebook.com/toncompte"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={t("contact.facebookLabel")}
+                        className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
+                      >
+                        <Facebook className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+                      </a>
 
-                      <div className="flex flex-wrap gap-3">
-                        <a
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={t("contact.facebookLabel")}
-                          className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
-                        >
-                          <Facebook className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                        </a>
+                      {/* LinkedIn */}
+                      <a
+                        href="https://www.linkedin.com/in/tonprofil"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={t("contact.linkedinLabel")}
+                        className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
+                      >
+                        <Linkedin className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+                      </a>
 
-                        <a
-                          href="#"
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={t("contact.linkedinLabel")}
-                          className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
+                      {/* YouTube */}
+                      <a
+                        href="https://www.youtube.com/@tonchaine"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="YouTube"
+                        className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
                         >
-                          <Linkedin className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                        </a>
-                      </div>
+                          <path d="M23.5 6.2a2.9 2.9 0 0 0-2-2C19.5 4 12 4 12 4s-7.5 0-9.5.2a2.9 2.9 0 0 0-2 2C0 8.2 0 12 0 12s0 3.8.5 5.8a2.9 2.9 0 0 0 2 2c2 .2 9.5.2 9.5.2s7.5 0 9.5-.2a2.9 2.9 0 0 0 2-2c.5-2 .5-5.8.5-5.8s0-3.8-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
+                        </svg>
+                      </a>
                     </div>
                   </ScrollReveal>
                 </div>

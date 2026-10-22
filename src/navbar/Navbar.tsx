@@ -12,6 +12,17 @@ const menuItems = [
   { key: "contact", href: "#contact" },
 ];
 
+// Menu mobile : on ajoute Galerie
+const mobileMenuItems = [
+  { key: "home", href: "#accueil" },
+  { key: "about", href: "#biographie" },
+  { key: "journey", href: "#parcours-politique" },
+  { key: "activities", href: "#engagements" },
+  { key: "awards", href: "#awards" },
+  { key: "gallery", href: "#gallery" },
+  { key: "contact", href: "#contact" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
@@ -21,7 +32,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-[100] w-full border-b border-white/10 bg-[#030303]/90 shadow-lg shadow-black/20 backdrop-blur-xl">
+    <header className="fixed left-0 top-0 z-[50] w-full border-b border-white/10 bg-[#030303]/90 shadow-lg shadow-black/20 backdrop-blur-xl">
       <nav className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 md:px-10 lg:px-16">
         {/* LOGO */}
         <motion.a
@@ -61,7 +72,11 @@ export default function Navbar() {
           </span>
         </motion.a>
 
-        {/* MENU DESKTOP */}
+        {/* =========================================
+            MENU DESKTOP
+            Galerie n'est PAS ajoutée ici
+        ========================================= */}
+
         <div className="hidden items-center gap-7 md:flex">
           {menuItems.map((item) => (
             <a
@@ -97,10 +112,8 @@ export default function Navbar() {
 
         {/* DROITE DESKTOP */}
         <div className="hidden items-center gap-5 md:flex">
-          {/* LANGUE */}
           <LanguageSelector />
 
-          {/* CONTACT */}
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.03 }}
@@ -108,7 +121,8 @@ export default function Navbar() {
             className="
               border border-[#f3f009]
               bg-[#f3f009]
-              px-5 py-3
+              px-5
+              py-3
               text-[10px]
               uppercase
               tracking-[0.2em]
@@ -122,17 +136,19 @@ export default function Navbar() {
           </motion.a>
         </div>
 
-        {/* MOBILE */}
+        {/* =========================================
+            MOBILE
+        ========================================= */}
+
         <div className="flex items-center gap-4 md:hidden">
-          {/* LANGUE */}
           <LanguageSelector />
 
-          {/* MENU BURGER */}
           <button
             type="button"
             onClick={() => setOpen(!open)}
             className="flex flex-col gap-1.5"
             aria-label="Menu"
+            aria-expanded={open}
           >
             <span
               className={`
@@ -161,7 +177,10 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* MENU MOBILE */}
+      {/* =========================================
+          MENU MOBILE
+      ========================================= */}
+
       <div
         className={`
           absolute
@@ -181,7 +200,7 @@ export default function Navbar() {
         `}
       >
         <div className="flex flex-col px-8 py-8">
-          {menuItems.map((item) => (
+          {mobileMenuItems.map((item) => (
             <a
               key={item.href}
               href={item.href}

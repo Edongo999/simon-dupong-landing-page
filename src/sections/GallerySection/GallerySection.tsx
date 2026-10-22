@@ -4,39 +4,88 @@ import { motion } from "framer-motion";
 import SectionHeading from "../SectionHeading";
 import GalleryMediaSymbol from "./GalleryMediaSymbol";
 import ScrollReveal from "@/components/animations/ScrollReveal";
-
+import GalleryModal from "./GalleryModal";
 const photos = [
-  {
-    src: "/Images/simon11.webp",
-    key: "portrait",
-    className: "md:row-span-2",
-  },
-  {
-    src: "/Images/simon10.webp",
-    key: "events",
-    className: "",
-  },
-  {
-    src: "/Images/simon12.webp",
-    key: "engagements",
-    className: "",
-  },
+  { src: "/Images/simon11.webp", key: "portrait", className: "md:row-span-2" },
+  { src: "/Images/simon10.webp", key: "events", className: "" },
+  { src: "/Images/awards/simon25.webp", key: "engagements", className: "" },
   {
     src: "/Images/awards/simon22.webp",
     key: "meetings",
     className: "md:col-span-2",
   },
+  { src: "/Images/Gallerie/gallerie14.webp", key: "travel", className: "" }, // Voyages
+  { src: "/Images/Gallerie/gallerie2.webp", key: "visits", className: "" }, // Visites
+
+  // Ajouts avec tailles variées
+  {
+    src: "/Images/Gallerie/gallerie39.webp",
+    key: "conference",
+    className: "md:row-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie3.webp", key: "innovation", className: "" },
+  { src: "/Images/Gallerie/gallerie4.webp", key: "teamwork", className: "" },
+  {
+    src: "/Images/Gallerie/gallerie34.webp",
+    key: "leadership",
+    className: "md:col-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie22.webp", key: "vision", className: "" },
+  {
+    src: "/Images/Gallerie/gallerie24.webp",
+    key: "strategy",
+    className: "md:row-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie17.webp", key: "growth", className: "" },
+  { src: "/Images/Gallerie/gallerie18.webp", key: "impact", className: "" },
+  {
+    src: "/Images/Gallerie/gallerie21.webp",
+    key: "future",
+    className: "md:col-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie26.webp", key: "awards", className: "" },
+  { src: "/Images/Gallerie/gallerie11.webp", key: "network", className: "" },
+  {
+    src: "/Images/Gallerie/gallerie23.webp",
+    key: "projects",
+    className: "md:row-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie5.webp", key: "success", className: "" },
+
+  // Ajouts supplémentaires jusqu'à 35
+  { src: "/Images/simon12.webp", key: "culture", className: "" },
 
   {
-    src: "/Images/simon15.jpg",
-    key: "travel",
-    className: "",
+    src: "/Images/Gallerie/gallerie31.webp",
+    key: "community",
+    className: "md:row-span-2",
   },
+  { src: "/Images/Gallerie/gallerie18.webp", key: "education", className: "" },
+  { src: "/Images/Gallerie/gallerie1.webp", key: "Amitié", className: "" },
   {
-    src: "/Images/simon16.jpg",
-    key: "trips",
+    src: "/Images/Gallerie/gallerie37.webp",
+    key: "presence",
+    className: "md:col-span-2",
+  },
+  { src: "/Images/Gallerie/gallerie20.webp", key: "nature", className: "" },
+  { src: "/Images/Gallerie/gallerie6.webp", key: "art", className: "" },
+
+  { src: "/Images/Gallerie/festival.webp", key: "festival", className: "" },
+  {
+    src: "/Images/Gallerie/gallerie25.webp",
+    key: "celebration",
     className: "",
   },
+  { src: "/Images/Gallerie/gallerie13.webp", key: "journey", className: "" },
+  { src: "/Images/Gallerie/gallerie27.webp", key: "memories", className: "" },
+  { src: "/Images/Gallerie/gallerie29.webp", key: "russia", className: "" },
+
+  // petite
+  {
+    src: "/Images/Gallerie/gallerie36.webp",
+    key: "speech",
+    className: "md:col-span-2",
+  }, // grande horizontale
 ];
 
 export default function GallerySection() {
@@ -45,7 +94,7 @@ export default function GallerySection() {
   return (
     <section
       id="galerie"
-      className="relative overflow-hidden bg-[#030303] px-6 py-24 sm:px-10 lg:px-20 lg:py-12"
+      className="relative overflow-hidden bg-[#030303] px-6 py-8 sm:px-10 lg:px-20 lg:py-12"
     >
       {/* Lumières d'ambiance */}
       <div
@@ -81,79 +130,16 @@ export default function GallerySection() {
           delay={0.1}
           duration={1.2}
           amount={0.08}
-          className="mt-8 flex justify-end"
+          className="mt-2 flex justify-end"
         >
           <GalleryMediaSymbol />
         </ScrollReveal>
 
         {/* Galerie photos */}
-        <div className="mt-12 grid auto-rows-[220px] gap-4 sm:grid-cols-2 md:auto-rows-[260px] md:grid-cols-3">
-          {photos.map((photo, index) => {
-            const fromLeft = index % 2 === 0;
 
-            return (
-              <ScrollReveal
-                key={photo.src}
-                direction={fromLeft ? "left" : "right"}
-                distance={22}
-                delay={index * 0.11}
-                duration={1.25}
-                amount={0.08}
-                scale
-                className={photo.className}
-              >
-                <figure className="group relative h-full overflow-hidden rounded-lg bg-white/5">
-                  <img
-                    src={photo.src}
-                    alt={t(`gallery.photos.${photo.key}.alt`)}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
+        <GalleryModal photos={photos} />
 
-                  {/* Dégradé */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
-
-                  {/* Ligne jaune */}
-                  <motion.span
-                    aria-hidden="true"
-                    initial={{
-                      scaleX: 0,
-                    }}
-                    whileInView={{
-                      scaleX: 1,
-                    }}
-                    viewport={{
-                      once: true,
-                    }}
-                    transition={{
-                      duration: 1.15,
-                      delay: 0.35 + index * 0.11,
-                      ease: [0.16, 1, 0.3, 1],
-                    }}
-                    className="absolute bottom-0 left-0 z-20 h-[2px] w-full origin-left bg-[#f3f009]"
-                  />
-
-                  {/* Label */}
-                  <figcaption className="absolute bottom-0 left-0 z-20 p-5 text-sm font-medium tracking-wide text-white transition-transform duration-500 group-hover:-translate-y-1">
-                    {t(`gallery.photos.${photo.key}.label`)}
-                  </figcaption>
-
-                  {/* Repère graphique gauche */}
-                  <span
-                    aria-hidden="true"
-                    className="absolute left-4 top-4 z-20 h-7 w-7 border-l border-t border-[#f3f009]/70 opacity-70 transition-all duration-500 group-hover:h-9 group-hover:w-9 group-hover:opacity-100"
-                  />
-
-                  {/* Repère graphique droit */}
-                  <span
-                    aria-hidden="true"
-                    className="absolute right-4 top-4 z-20 h-7 w-7 border-r border-t border-[#f3f009]/70 opacity-70 transition-all duration-500 group-hover:h-9 group-hover:w-9 group-hover:opacity-100"
-                  />
-                </figure>
-              </ScrollReveal>
-            );
-          })}
-        </div>
+        {/* Galerie photos */}
 
         {/* Vidéo */}
         <ScrollReveal

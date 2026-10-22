@@ -2,7 +2,7 @@ import Navbar from "@/navbar/Navbar";
 
 import BiographySection from "@/sections/BiographySection";
 import PoliticalJourney from "@/sections/PoliticalJourney";
-import EngagementsSection from "@/sections/EngagementsSection";
+import EngagementsSection from "@/sections/engagements/EngagementsSection";
 import ImpactSection from "@/sections/ImpactSection/ImpactSection";
 import AwardsSection from "@/sections/AwardsSection/AwardsSection";
 import GallerySection from "@/sections/GallerySection/GallerySection";

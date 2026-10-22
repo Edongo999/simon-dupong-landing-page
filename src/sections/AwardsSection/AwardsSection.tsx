@@ -20,10 +20,7 @@ const distinctions = [
   },
   {
     key: "workMedals",
-    images: [
-      "/images/awards/medailles-travail-2025-1.jpg",
-      "/images/awards/medailles-travail-2025-2.jpg",
-    ],
+    images: ["/Images/awards/simon26.webp", "/Images/awards/simon27.webp"],
     columns: 2,
   },
   {
@@ -52,7 +49,7 @@ const AwardsSection = () => {
   return (
     <section
       id="awards"
-      className="relative overflow-hidden bg-[#0d0d0a] py-24 sm:py-12"
+      className="relative overflow-hidden bg-[#0d0d0a] py-10 sm:py-12"
     >
       {/* =========================================
         SYMBOLE — DISTINCTIONS & PUBLICATIONS
@@ -180,7 +177,7 @@ const AwardsSection = () => {
             PUBLICATIONS
         ========================================== */}
 
-        <div className="mt-20 sm:mt-8">
+        <div className="mt-10 sm:mt-8">
           <ScrollReveal
             direction="right"
             distance={28}

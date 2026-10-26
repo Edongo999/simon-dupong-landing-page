@@ -3,7 +3,7 @@ import { Facebook } from "lucide-react";
 
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import { FaTiktok } from "react-icons/fa";
-import SiteCredit from "@/layout/SiteCredit ";
+import SiteCredit from "@/layout/SiteCredit";
 
 export default function Footer() {
   const { t } = useTranslation();

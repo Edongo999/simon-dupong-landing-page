@@ -133,7 +133,7 @@ export default function ImpactSection() {
         {/* =========================
             ACTIONS SOCIALES
         ========================== */}
-        <div className="mt-14 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12 lg:gap-14 lg:pt-14">
+        <div className="mt-6 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12 lg:gap-14 lg:pt-14">
           {/* Partie gauche */}
           <motion.div
             variants={revealFromLeft}

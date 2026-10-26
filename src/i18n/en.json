@@ -350,9 +350,16 @@
     },
     "videoEyebrow": "In pictures",
     "videoTitle": "Discovering a journey from another perspective.",
-    "videoLabel": "Audiovisual documentary"
-  },
+    "videoLabel": "Audiovisual documentary",
+    "videoEyebrow2": "A look at the journey",
+    "videoTitle2": "Moments that tell a story.",
+    "videoLabel2": "Archives & testimonies",
 
+    "videoEyebrow3": "At the heart of action",
+    "videoTitle3": "Commitments in motion.",
+    "videoLabel3": "Audiovisual sequence"
+      },
+      
   "impact": {
     "eyebrow": "Actions & Impact",
     "title": "Commitments translated into action.",

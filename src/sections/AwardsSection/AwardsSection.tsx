@@ -130,7 +130,7 @@ const AwardsSection = () => {
             DISTINCTIONS
         ========================================== */}
 
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-8 sm:mt-20">
           <ScrollReveal
             direction="left"
             distance={28}

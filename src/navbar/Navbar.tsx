@@ -19,7 +19,7 @@ const mobileMenuItems = [
   { key: "journey", href: "#parcours-politique" },
   { key: "activities", href: "#engagements" },
   { key: "awards", href: "#awards" },
-  { key: "gallery", href: "#gallery" },
+  { key: "gallery", href: "#galerie" },
   { key: "contact", href: "#contact" },
 ];
 

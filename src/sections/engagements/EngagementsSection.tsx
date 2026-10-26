@@ -59,7 +59,7 @@ export default function EngagementsSection() {
   return (
     <section
       id="engagements"
-      className="relative isolate overflow-hidden bg-[#111109] px-6 py-10 sm:px-10 sm:py-32 lg:px-20 lg:py-12"
+      className="relative isolate overflow-hidden -mt-10 bg-[#111109] px-6 py-10 sm:px-10 sm:py-32 lg:px-20 lg:py-12"
     >
       {/* =========================================
           DÉCOR

@@ -12,7 +12,7 @@ export default function SectionHeading({
   description,
 }: SectionHeadingProps) {
   return (
-    <div className="mb-12 max-w-3xl">
+    <div className="mb-3 max-w-3xl">
       {/* Numéro et catégorie */}
       <div className="mb-5 flex items-center gap-3">
         <span className="text-sm font-medium text-[#f3f009]">{number}</span>

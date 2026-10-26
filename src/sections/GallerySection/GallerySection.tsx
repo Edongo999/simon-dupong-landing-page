@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -5,6 +6,7 @@ import SectionHeading from "../SectionHeading";
 import GalleryMediaSymbol from "./GalleryMediaSymbol";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import GalleryModal from "./GalleryModal";
+
 const photos = [
   { src: "/Images/simon11.webp", key: "portrait", className: "md:row-span-2" },
   { src: "/Images/simon10.webp", key: "events", className: "" },
@@ -14,10 +16,9 @@ const photos = [
     key: "meetings",
     className: "md:col-span-2",
   },
-  { src: "/Images/Gallerie/gallerie14.webp", key: "travel", className: "" }, // Voyages
-  { src: "/Images/Gallerie/gallerie2.webp", key: "visits", className: "" }, // Visites
+  { src: "/Images/Gallerie/gallerie14.webp", key: "travel", className: "" },
+  { src: "/Images/Gallerie/gallerie2.webp", key: "visits", className: "" },
 
-  // Ajouts avec tailles variées
   {
     src: "/Images/Gallerie/gallerie39.webp",
     key: "conference",
@@ -52,7 +53,6 @@ const photos = [
   },
   { src: "/Images/Gallerie/gallerie5.webp", key: "success", className: "" },
 
-  // Ajouts supplémentaires jusqu'à 35
   { src: "/Images/simon12.webp", key: "culture", className: "" },
 
   {
@@ -80,12 +80,32 @@ const photos = [
   { src: "/Images/Gallerie/gallerie27.webp", key: "memories", className: "" },
   { src: "/Images/Gallerie/gallerie29.webp", key: "russia", className: "" },
 
-  // petite
   {
     src: "/Images/Gallerie/gallerie36.webp",
     key: "speech",
     className: "md:col-span-2",
-  }, // grande horizontale
+  },
+];
+
+const videos = [
+  {
+    src: "/videos/simon-video.mp4",
+    eyebrow: "gallery.videoEyebrow",
+    title: "gallery.videoTitle",
+    label: "gallery.videoLabel",
+  },
+  {
+    src: "/videos/simon-video-2.mp4",
+    eyebrow: "gallery.videoEyebrow2",
+    title: "gallery.videoTitle2",
+    label: "gallery.videoLabel2",
+  },
+  {
+    src: "/videos/simon-video-3.mp4",
+    eyebrow: "gallery.videoEyebrow3",
+    title: "gallery.videoTitle3",
+    label: "gallery.videoLabel3",
+  },
 ];
 
 export default function GallerySection() {
@@ -136,154 +156,155 @@ export default function GallerySection() {
         </ScrollReveal>
 
         {/* Galerie photos */}
-
         <GalleryModal photos={photos} />
 
-        {/* Galerie photos */}
+        {/* Vidéos */}
+        <div className="mt-10 space-y-10">
+          {videos.map((video) => (
+            <ScrollReveal
+              key={video.src}
+              direction="up"
+              distance={26}
+              duration={1.3}
+              amount={0.08}
+            >
+              {/* Introduction vidéo */}
+              <div className="mb-6 flex items-end justify-between gap-6 border-b border-white/10 pb-4">
+                <div>
+                  <span className="mb-2 block text-[10px] uppercase tracking-[0.3em] text-[#f3f009]">
+                    {t(video.eyebrow)}
+                  </span>
 
-        {/* Vidéo */}
-        <ScrollReveal
-          direction="up"
-          distance={26}
-          duration={1.3}
-          amount={0.08}
-          className="mt-16"
-        >
-          {/* Introduction vidéo */}
-          <div className="mb-6 flex items-end justify-between gap-6 border-b border-white/10 pb-4">
-            <div>
-              <span className="mb-2 block text-[10px] uppercase tracking-[0.3em] text-[#f3f009]">
-                {t("gallery.videoEyebrow")}
-              </span>
+                  <h3 className="text-2xl font-medium tracking-tight text-white sm:text-3xl">
+                    {t(video.title)}
+                  </h3>
+                </div>
 
-              <h3 className="text-2xl font-medium tracking-tight text-white sm:text-3xl">
-                {t("gallery.videoTitle")}
-              </h3>
-            </div>
+                <span className="hidden text-xs uppercase tracking-[0.2em] text-white/30 sm:block">
+                  {t(video.label)}
+                </span>
+              </div>
 
-            <span className="hidden text-xs uppercase tracking-[0.2em] text-white/30 sm:block">
-              {t("gallery.videoLabel")}
-            </span>
-          </div>
+              {/* Conteneur vidéo */}
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0.985,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.15,
+                }}
+                transition={{
+                  duration: 1.4,
+                  delay: 0.15,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="group relative overflow-hidden rounded-lg border border-white/10 bg-[#090909]"
+              >
+                <video
+                  src={video.src}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="aspect-video w-full object-cover"
+                />
 
-          {/* Conteneur vidéo */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.985,
-            }}
-            whileInView={{
-              opacity: 1,
-              scale: 1,
-            }}
-            viewport={{
-              once: true,
-              amount: 0.15,
-            }}
-            transition={{
-              duration: 1.4,
-              delay: 0.15,
-              ease: [0.16, 1, 0.3, 1],
-            }}
-            className="group relative overflow-hidden rounded-lg border border-white/10 bg-[#090909]"
-          >
-            <video
-              src="/videos/simon-video.mp4"
-              controls
-              preload="metadata"
-              playsInline
-              className="aspect-video w-full object-cover"
-            />
+                {/* Coin supérieur gauche */}
+                <motion.span
+                  aria-hidden="true"
+                  initial={{
+                    opacity: 0,
+                    x: -10,
+                    y: -10,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.45,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                  className="pointer-events-none absolute left-5 top-5 z-10 h-10 w-10 border-l border-t border-[#f3f009]/70"
+                />
 
-            {/* Coin supérieur gauche */}
-            <motion.span
-              aria-hidden="true"
-              initial={{
-                opacity: 0,
-                x: -10,
-                y: -10,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.9,
-                delay: 0.45,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="pointer-events-none absolute left-5 top-5 z-10 h-10 w-10 border-l border-t border-[#f3f009]/70"
-            />
+                {/* Coin supérieur droit */}
+                <motion.span
+                  aria-hidden="true"
+                  initial={{
+                    opacity: 0,
+                    x: 10,
+                    y: -10,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.55,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                  className="pointer-events-none absolute right-5 top-5 z-10 h-10 w-10 border-r border-t border-[#f3f009]/70"
+                />
 
-            {/* Coin supérieur droit */}
-            <motion.span
-              aria-hidden="true"
-              initial={{
-                opacity: 0,
-                x: 10,
-                y: -10,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.9,
-                delay: 0.55,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="pointer-events-none absolute right-5 top-5 z-10 h-10 w-10 border-r border-t border-[#f3f009]/70"
-            />
+                {/* Coin inférieur gauche */}
+                <motion.span
+                  aria-hidden="true"
+                  initial={{
+                    opacity: 0,
+                    x: -10,
+                    y: 10,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.65,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                  className="pointer-events-none absolute bottom-5 left-5 z-10 h-10 w-10 border-b border-l border-[#f3f009]/40"
+                />
 
-            {/* Coin inférieur gauche */}
-            <motion.span
-              aria-hidden="true"
-              initial={{
-                opacity: 0,
-                x: -10,
-                y: 10,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.9,
-                delay: 0.65,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="pointer-events-none absolute bottom-5 left-5 z-10 h-10 w-10 border-b border-l border-[#f3f009]/40"
-            />
-
-            {/* Coin inférieur droit */}
-            <motion.span
-              aria-hidden="true"
-              initial={{
-                opacity: 0,
-                x: 10,
-                y: 10,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.9,
-                delay: 0.75,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="pointer-events-none absolute bottom-5 right-5 z-10 h-10 w-10 border-b border-r border-[#f3f009]/40"
-            />
-          </motion.div>
-        </ScrollReveal>
+                {/* Coin inférieur droit */}
+                <motion.span
+                  aria-hidden="true"
+                  initial={{
+                    opacity: 0,
+                    x: 10,
+                    y: 10,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.75,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                  className="pointer-events-none absolute bottom-5 right-5 z-10 h-10 w-10 border-b border-r border-[#f3f009]/40"
+                />
+              </motion.div>
+            </ScrollReveal>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -85,7 +85,7 @@ export default function BiographySection() {
           />
         </motion.div>
 
-        <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
+        <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
           {/* Portrait et informations associées */}
           <div className="mx-auto w-full max-w-[480px] lg:mx-0">
             <motion.div

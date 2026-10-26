@@ -386,8 +386,15 @@
 
   "videoEyebrow": "En images",
   "videoTitle": "Un parcours à découvrir autrement.",
-  "videoLabel": "Document audiovisuel"
-},
+  "videoLabel": "Document audiovisuel",
+  "videoEyebrow2": "Regards sur le parcours",
+  "videoTitle2": "Des moments qui racontent une histoire.",
+  "videoLabel2": "Archives & témoignages",
+
+  "videoEyebrow3": "Au cœur de l'action",
+  "videoTitle3": "Des engagements en mouvement.",
+  "videoLabel3": "Séquence audiovisuelle"
+  },
 
 "impact": {
   "eyebrow": "Actions & impact",
@@ -477,9 +484,6 @@
   "follow": "Suivre",
   "facebookLabel": "Facebook",
   "linkedinLabel": "LinkedIn",
-
-  
-  
 
   "copyright": "© 2026 Simon Dupong. Tous droits réservés.",
   "signature": "Site officiel"

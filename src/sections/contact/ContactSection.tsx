@@ -5,11 +5,11 @@ import {
   MessageCircle,
   Phone,
   Facebook,
-  Linkedin,
 } from "lucide-react";
 
 import SectionHeading from "../SectionHeading";
 import ScrollReveal from "@/components/animations/ScrollReveal";
+import { FaTiktok } from "react-icons/fa";
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -211,7 +211,7 @@ export default function ContactSection() {
                     amount={0.08}
                   >
                     <div>
-                      <span className="mb-2 block text-[10px] font-semibold uppercase tracking-[0.2em] text-black/45">
+                      <span className="mb-5 block text-[10px] font-semibold uppercase tracking-[0.2em] text-black/45">
                         {t("contact.phoneLabel")}
                       </span>
 
@@ -279,7 +279,7 @@ export default function ContactSection() {
                     <div className="flex flex-wrap gap-3">
                       {/* Facebook */}
                       <a
-                        href="https://www.facebook.com/toncompte"
+                        href="https://www.facebook.com/SimonDupongPage"
                         target="_blank"
                         rel="noreferrer"
                         aria-label={t("contact.facebookLabel")}
@@ -288,20 +288,19 @@ export default function ContactSection() {
                         <Facebook className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
                       </a>
 
-                      {/* LinkedIn */}
+                      {/* TikTok */}
                       <a
-                        href="https://www.linkedin.com/in/tonprofil"
+                        href="https://www.tiktok.com/@tonprofil"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={t("contact.linkedinLabel")}
+                        aria-label="TikTok"
                         className="group flex h-10 w-10 items-center justify-center rounded-full border border-black/15 transition-all duration-300 hover:border-black hover:bg-black hover:text-[#f3f009]"
                       >
-                        <Linkedin className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+                        <FaTiktok className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
                       </a>
-
                       {/* YouTube */}
                       <a
-                        href="https://www.youtube.com/@tonchaine"
+                        href="https://www.youtube.com/@simondupong?si=nJm4SxoyYB7zVKo3"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="YouTube"

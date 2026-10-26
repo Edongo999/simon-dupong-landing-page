@@ -450,6 +450,7 @@
   "emailLabel": "Adresse e-mail",
   "availability": "Disponible pour les prises de contact",
   "number": "07",
+  "phoneLabel": "Numéro de téléphone",
   "phonePrimary": "+237 697 47 55 73",
   "phoneSecondary": "+237 654 87 25 85",
   "email": "contact@exemple.cm",

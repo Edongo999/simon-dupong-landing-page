@@ -87,7 +87,7 @@ export default function PortraitReveal({
    * Position du portrait
    */
   const positionX = isMobile ? 0.4 : 2.45;
-  const positionY = isMobile ? 0.2 : -0.2;
+  const positionY = isMobile ? 0.4 : -0.2;
 
   const portraitScale = isMobile ? 0.88 : 1.2;
 

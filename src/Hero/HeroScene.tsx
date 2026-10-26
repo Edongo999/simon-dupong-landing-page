@@ -72,13 +72,44 @@ export default function HeroScene({ progress }: HeroSceneProps) {
       </Canvas>
 
       {/* VIGNETTE */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_72%_50%,transparent_20%,rgba(3,3,3,0.15)_45%,rgba(3,3,3,0.85)_100%)]" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-0
+          bg-[radial-gradient(circle_at_72%_50%,transparent_20%,rgba(3,3,3,0.15)_45%,rgba(3,3,3,0.85)_100%)]
+        "
+      />
 
       {/* ASSOMBRISSEMENT CÔTÉ GAUCHE */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r from-[#030303] via-[#030303]/70 to-transparent" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-y-0
+          left-0
+          w-[60%]
+          bg-gradient-to-r
+          from-[#030303]
+          via-[#030303]/70
+          to-transparent
+        "
+      />
 
-      {/* FONDU BAS */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#030303] to-transparent" />
+      {/* FONDU BAS — plus léger sur mobile */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-x-0
+          bottom-0
+          h-20
+          bg-gradient-to-t
+          from-[#030303]
+          to-transparent
+          sm:h-40
+        "
+      />
     </div>
   );
 }

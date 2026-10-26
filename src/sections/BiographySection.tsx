@@ -56,7 +56,7 @@ export default function BiographySection() {
     <section
       ref={sectionRef}
       id="biographie"
-      className="relative isolate overflow-hidden bg-[#0C0C0C] px-6 py-12 sm:px-10 sm:py-28 lg:px-20 lg:py-12"
+      className="relative isolate overflow-hidden bg-[#0C0C0C] -mt-34 sm:mt-0 px-6 py-8 sm:px-10 sm:py-28 lg:px-20 lg:py-12"
     >
       {/* Lumières d'ambiance */}
       <div
@@ -128,7 +128,7 @@ export default function BiographySection() {
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-transparent to-black/10" />
 
                 <img
-                  src="/Images/simon1.jpg"
+                  src="/Images/simon1.webp"
                   alt={t("biography.portraitAlt")}
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover object-top grayscale-[15%] transition duration-1000 ease-out group-hover:scale-[1.04] group-hover:grayscale-0"
@@ -218,7 +218,7 @@ export default function BiographySection() {
             </h3>
 
             {/* Description biographique */}
-             <div
+            <div
               className="
                 mt-8
                 w-full
@@ -249,8 +249,6 @@ export default function BiographySection() {
 
               <p>{t("biography.paragraph3")}</p>
             </div>
-
-           
 
             {/* Domaines d'activité */}
             <div className="mt-9 flex flex-wrap gap-2.5">

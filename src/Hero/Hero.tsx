@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
 import HeroScene from "./HeroScene";
 import HeroName from "./HeroName";
 import HeroBackground from "./HeroBackground";
@@ -16,9 +15,6 @@ export default function Hero() {
 
   // Évite de programmer plusieurs animations simultanément.
   const frameRef = useRef<number | null>(null);
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { t } = useTranslation();
 
   useEffect(() => {
     const update = () => {
@@ -83,12 +79,34 @@ export default function Hero() {
     <section
       ref={heroRef}
       id="accueil"
-      className="relative h-[86vh]   /* hauteur réduite par défaut (mobile) */
-    sm:h-[180vh] /* un peu plus sur petits écrans */
-    md:h-[200vh] /* hauteur normale sur desktop */ bg-[#030303]"
+      className="
+        relative
+        min-h-[100svh]
+        bg-[#030303]
+        sm:h-[180vh]
+        md:h-[200vh]
+      "
     >
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-[100svh] overflow-hidden sm:h-screen">
         <HeroBackground />
+        {/* Fondu inférieur uniquement sur mobile */}
+        <div
+          aria-hidden="true"
+          className="
+    pointer-events-none
+    absolute
+    bottom-0
+    left-0
+    right-0
+    z-20
+    h-[35vh]
+    bg-gradient-to-t
+    from-[#030303]
+    via-[#030303]/80
+    to-transparent
+    sm:hidden
+  "
+        />
 
         <HeroScene progress={progress} />
 
@@ -119,10 +137,12 @@ export default function Hero() {
               relative
               w-full
               px-6
-              pt-28
+              pt-24
+              pb-6
               md:w-[50%]
               md:px-20
               md:pt-20
+              md:pb-0
               lg:w-[52%]
               lg:px-24
               lg:pt-24

@@ -20,14 +20,18 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
 
   // Animation d'entrée générale du Hero
   useEffect(() => {
-    const frame = requestAnimationFrame(() => setStarted(true));
+    const frame = requestAnimationFrame(() => {
+      setStarted(true);
+    });
 
     return () => cancelAnimationFrame(frame);
   }, []);
 
   // Alternance des professions
   useEffect(() => {
-    if (!Array.isArray(professions) || professions.length <= 1) return;
+    if (!Array.isArray(professions) || professions.length <= 1) {
+      return;
+    }
 
     const interval = window.setInterval(() => {
       setProfessionIndex((current) => (current + 1) % professions.length);
@@ -48,11 +52,12 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
             className="
               inline-block
               font-sans
-              text-[16vw]
+              text-[14vw]
               font-semibold
-              leading-[0.9]
+              leading-[0.88]
               tracking-[-0.075em]
               text-white
+              sm:text-[16vw]
               md:text-[clamp(3.8rem,7.2vw,6.8rem)]
               lg:text-[clamp(4.2rem,6.2vw,6.8rem)]
               xl:text-[clamp(4.8rem,6vw,7.2rem)]
@@ -82,7 +87,8 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
       className="
         w-full
         max-w-[540px]
-        py-8
+        py-10
+        sm:py-6
         md:max-w-[560px]
         md:py-0
         lg:max-w-[600px]
@@ -92,7 +98,7 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
     >
       {/* PROFESSION */}
       <div
-        className="mb-6 flex items-center gap-3 md:mb-8 lg:mb-9"
+        className="mb-4 flex items-center gap-3 sm:mb-6 md:mb-8 lg:mb-9"
         style={{
           opacity: started ? 1 : 0,
           transform: started ? "translateY(0)" : "translateY(10px)",
@@ -143,18 +149,18 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
                 },
               }}
               className="
-          absolute
-          left-0
-          top-0
-          whitespace-nowrap
-          text-[9px]
-          font-medium
-          uppercase
-          tracking-[0.25em]
-          text-white/75
-          md:text-[10px]
-          md:tracking-[0.32em]
-        "
+                absolute
+                left-0
+                top-0
+                whitespace-nowrap
+                text-[9px]
+                font-medium
+                uppercase
+                tracking-[0.25em]
+                text-white/75
+                md:text-[10px]
+                md:tracking-[0.32em]
+              "
             >
               {Array.isArray(professions) ? professions[professionIndex] : ""}
             </motion.span>
@@ -166,11 +172,11 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
       <div className="relative w-full">
         {renderWord("Simon", 0)}
 
-        <div className="relative mt-2 md:mt-3">
+        <div className="relative mt-4 sm:mt-2 md:mt-2">
           {renderWord("DUPONG", 1)}
 
           <div
-            className="mt-6 h-px bg-[#f3f009] md:mt-8"
+            className="mt-6 h-px bg-[#f3f009] sm:mt-6 md:mt-8"
             style={{
               width: started ? "100px" : "0px",
               opacity: started ? 1 : 0,
@@ -182,7 +188,7 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
 
       {/* SLOGAN */}
       <div
-        className="mt-6 md:mt-7 lg:mt-8"
+        className="mt-8 sm:mt-5 md:mt-7 lg:mt-8"
         style={{
           opacity: started ? 1 : 0,
           transform: started ? "translateY(0)" : "translateY(18px)",
@@ -199,18 +205,18 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
           <span className="text-white">{t("hero.sloganLine3")}</span>
         </h2>
 
-        <p className="mt-5 max-w-[370px] text-xs leading-6 tracking-wide text-white/70 md:text-sm md:leading-7">
+        <p className="mt-3 max-w-[370px] text-xs leading-6 tracking-wide text-white/70 md:mt-5 md:text-sm md:leading-7">
           {t("hero.description")}
         </p>
 
-        <p className="mt-3 text-[10px] tracking-wide text-white/55 md:text-xs">
+        <p className="mt-2 text-[10px] tracking-wide text-white/55 md:mt-3 md:text-xs">
           {t("hero.birthInfo")}
         </p>
       </div>
 
       {/* BOUTON */}
       <div
-        className="mt-6 md:mt-7 lg:mt-8"
+        className="mt-4 sm:mt-6 md:mt-7 lg:mt-8"
         style={{
           opacity: started ? 1 : 0,
           transform: started ? "translateY(0)" : "translateY(14px)",
@@ -219,13 +225,51 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
       >
         <a
           href="#biographie"
-          className="group inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.16em] text-white/80 md:gap-4 md:text-xs md:tracking-[0.2em]"
+          className="
+            group
+            inline-flex
+            items-center
+            gap-3
+            text-[10px]
+            font-medium
+            uppercase
+            tracking-[0.16em]
+            text-white/80
+            md:gap-4
+            md:text-xs
+            md:tracking-[0.2em]
+          "
         >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#f3f009] bg-[#f3f009] text-black transition-all duration-300 group-hover:bg-transparent group-hover:text-[#f3f009] md:h-11 md:w-11">
+          <span
+            className="
+              flex
+              h-10
+              w-10
+              shrink-0
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-[#f3f009]
+              bg-[#f3f009]
+              text-black
+              transition-all
+              duration-300
+              group-hover:bg-transparent
+              group-hover:text-[#f3f009]
+              md:h-11
+              md:w-11
+            "
+          >
             <ArrowUpRight
               size={18}
               strokeWidth={1.8}
-              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              className="
+                transition-transform
+                duration-300
+                group-hover:translate-x-0.5
+                group-hover:-translate-y-0.5
+              "
             />
           </span>
 

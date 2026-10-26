@@ -87,7 +87,7 @@ export default function HeroName({ progress: _progress }: HeroNameProps) {
       className="
         w-full
         max-w-[540px]
-        py-10
+        py-12
         sm:py-6
         md:max-w-[560px]
         md:py-0

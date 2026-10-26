@@ -56,7 +56,7 @@ export default function BiographySection() {
     <section
       ref={sectionRef}
       id="biographie"
-      className="relative isolate overflow-hidden bg-[#0C0C0C] -mt-34 sm:mt-0 px-6 py-8 sm:px-10 sm:py-28 lg:px-20 lg:py-12"
+      className="relative isolate overflow-hidden bg-[#0C0C0C] -mt-17 sm:mt-0 px-6 py-8 sm:px-10 sm:py-28 lg:px-20 lg:py-12"
     >
       {/* Lumières d'ambiance */}
       <div

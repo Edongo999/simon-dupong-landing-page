@@ -1,13 +1,16 @@
 import { ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function SiteCredit() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full border-t border-white/[0.08] bg-[#111111]">
       <a
-        href="https://tonportfolio.com"
+        href="https://portfolio-frank-landry.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Visiter le portfolio de Frank Landry"
+        aria-label={t("siteCredit.ariaLabel")}
         className="
           group
           flex
@@ -23,17 +26,17 @@ export default function SiteCredit() {
         "
       >
         <span className="text-[8px] font-medium uppercase tracking-[0.12em] text-[#f5f5f0]">
-          Conçu & développé par
+          {t("siteCredit.designedBy")}
         </span>
 
         <span className="text-[9px] font-bold uppercase tracking-[0.1em] text-[#f5f5f0] transition-colors duration-300 group-hover:text-[#f3f009]">
-          Frank Landry
+          {t("siteCredit.name")}
         </span>
 
         <span className="h-3 w-px bg-white/20" />
 
         <span className="text-[8px] font-semibold uppercase tracking-[0.1em] text-[#f5f5f0] transition-colors duration-300 group-hover:text-[#f3f009]">
-          Visiter mon portfolio
+          {t("siteCredit.visitPortfolio")}
         </span>
 
         <ExternalLink

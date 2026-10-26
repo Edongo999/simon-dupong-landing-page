@@ -81,13 +81,14 @@ export default function Hero() {
       id="accueil"
       className="
         relative
-        min-h-[100svh]
+        h-[calc(100svh+10px)]
+      
         bg-[#030303]
         sm:h-[180vh]
         md:h-[200vh]
       "
     >
-      <div className="sticky top-0 h-[100svh] overflow-hidden sm:h-screen">
+      <div className="sticky top-0 h-svh overflow-hidden sm:h-screen">
         <HeroBackground />
         {/* Fondu inférieur uniquement sur mobile */}
         <div

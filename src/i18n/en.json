@@ -435,5 +435,11 @@
     "linkedinLabel": "LinkedIn",
     "copyright": "© 2026 Simon Dupong. All rights reserved.",
     "signature": "Official Website"
-  }
+  },
+"siteCredit": {
+  "designedBy": "Designed & developed by",
+  "name": "Frank Landry",
+  "visitPortfolio": "Visit my portfolio",
+  "ariaLabel": "Visit Frank Landry's portfolio"
+}
 }

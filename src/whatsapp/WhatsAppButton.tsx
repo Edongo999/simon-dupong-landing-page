@@ -39,7 +39,7 @@ export default function WhatsAppButton() {
         fixed
         bottom-5
         left-5
-        z-[100]
+        z-30
         flex
         h-12
         w-12

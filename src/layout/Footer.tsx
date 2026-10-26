@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Facebook } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 
 import ScrollReveal from "@/components/animations/ScrollReveal";
-import { FaTiktok } from "react-icons/fa";
 import SiteCredit from "@/layout/SiteCredit";
 
 export default function Footer() {
@@ -11,8 +11,13 @@ export default function Footer() {
   const navigation = [
     { label: t("footer.navigation.home"), href: "#accueil" },
     { label: t("footer.navigation.biography"), href: "#biographie" },
-    { label: t("footer.navigation.journey"), href: "#engagements" },
+
+    // Parcours politique
+    { label: t("footer.navigation.journey"), href: "#parcours-politique" },
+
+    // Engagements
     { label: t("footer.navigation.engagements"), href: "#engagements" },
+
     { label: t("footer.navigation.impact"), href: "#impact" },
     { label: t("footer.navigation.awards"), href: "#awards" },
     { label: t("footer.navigation.gallery"), href: "#galerie" },
@@ -67,8 +72,9 @@ export default function Footer() {
                 ))}
               </nav>
 
-              {/* Réseaux */}
+              {/* Réseaux sociaux */}
               <div className="flex items-center justify-center gap-3 lg:justify-start">
+                {/* Facebook */}
                 <a
                   href="https://www.facebook.com/SimonDupongPage"
                   target="_blank"
@@ -129,7 +135,7 @@ export default function Footer() {
         </span>
       </footer>
 
-      {/* Signature du créateur — APRÈS le footer */}
+      {/* Signature du créateur */}
       <SiteCredit />
     </>
   );
